@@ -1,0 +1,108 @@
+#content {
+  background-color: #efe9e7;
+  position: static;
+  padding: 30px 1%;
+}
+#content img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1%;
+}
+
+#content p {
+  font-size: 20px;
+  color: #3d1101;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.login {
+  width: 20%;
+  margin: 0 auto;
+  border-top: 3px solid #ff5e45;
+  background: #efe9e7;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  padding: 1% 2%;
+}
+.login h2 {
+  font-size: 18px;
+  color: #3d1101;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.login input {
+  width: 98%;
+}
+.login a {
+  font-size: 14px;
+  color: #ff5e45;
+  text-decoration: none;
+}
+
+.login .reg,
+.login .loginup {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 3%;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 3% 16%;
+  margin-top: 5%;
+}
+
+.login .reg {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 3px;
+}
+.login .loginup {
+  background: #f56c23;
+  border-radius: 3px;
+}
+
+.login .email,
+.login .password {
+  position: relative;
+  display: block;
+}
+.email::after,
+.password::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0e0";
+  font-size: 14px;
+  position: absolute;
+  left: 6px;
+  top: 60%;
+  transform: translateY(-50%);
+}
+.password::after {
+  content: "\f023";
+}
+.email input,
+.login input {
+  text-indent: 20px;
+  margin: 10px 0px;
+}
+@media (max-width: 768px) {
+  .login {
+    width: 50%;
+    padding: 3% 4%;
+  }
+}
+@media (max-width: 569px) {
+  .login {
+    width: 70%;
+    padding: 3% 4%;
+  }
+  #content img,
+  #content p {
+    margin-bottom: 5%;
+  }
+}
+
+.error {
+  display: block;
+  color: red;
+}

@@ -1,0 +1,43 @@
+.login {
+  width: 50%;
+}
+.spec {
+  width: 50%;
+  margin-right: 20px;
+  line-height: 1.5em;
+}
+.register {
+  width: 45%;
+}
+.spec,
+.register {
+  float: left;
+}
+
+.login .reg {
+  background: #f56c23;
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .login {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) and (min-width: 569px) {
+  .login {
+    width: 80%;
+  }
+}
+
+@media (max-width: 568px) {
+  .login {
+    width: 90%;
+  }
+  .register {
+    width: 90%;
+  }
+  .spec {
+    display: none;
+  }
+}

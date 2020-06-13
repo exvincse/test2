@@ -1,0 +1,202 @@
+#content {
+  position: none;
+  padding: 30px 50px;
+  background-color: #efe9e7;
+}
+.order-food {
+  width: 15%;
+  font-size: 16px;
+  color: #3d1101;
+  line-height: 32px;
+  float: left;
+  margin-right: 3%;
+  margin-bottom: 10px;
+}
+.order-food h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.order-food h2::before {
+  content: "\f06c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 24px;
+  margin-right: 5px;
+}
+.order-food ul li a {
+  display: block;
+  border-bottom: 1px solid #3d1101;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #3d1101;
+}
+.order-food ul li a:hover {
+  background: #3d1101;
+  color: #ffffff;
+}
+.fas .fa-leaf {
+  width: 26px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.select-shop {
+  float: left;
+  width: 100%;
+}
+.select-shop .food-select,
+.btn {
+  float: left;
+}
+
+.fa-search {
+  padding: 1% 3%;
+  font-size: 20px;
+}
+.select-input {
+  float: left;
+  width: 80%;
+}
+.shopcart-icon {
+  float: right;
+  padding: 7px 0px;
+}
+.shopcart-icon a,
+.shopcart-icon i {
+  float: left;
+}
+.shopcart-icon a {
+  border-right: 1px solid #3d1101;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.shopcart-icon i {
+  padding: 5px;
+}
+.btn {
+  background: #3d1101;
+  padding: 8.5px 30px;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: black;
+}
+
+.select-shop input[type="text"] {
+  border-radius: 0;
+  width: 60%;
+  float: left;
+  padding: 9px;
+}
+
+.shopcart-icon {
+  width: 20%;
+}
+.food {
+  width: 220px;
+  background: #efe9e7;
+  box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+  color: #3d1101;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+.food-kind {
+  float: left;
+  width: 80%;
+}
+
+.food-introduce {
+  padding: 20px 10px;
+  text-align: center;
+}
+.food-introduce h3,
+.food-introduce p,
+.food-introduce hr {
+  margin-bottom: 15px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.food-introduce p {
+  padding-bottom: 5px;
+}
+.food-introduce a {
+  border: 2px solid #ff5e45;
+  border-radius: 3px;
+  color: #ff5e45;
+  padding: 1px 20%;
+  text-decoration: none;
+}
+.food-introduce i {
+  margin-right: 2px;
+}
+hr {
+  border: 1px solid #3d1101;
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  #content {
+    position: none;
+    padding: 30px;
+  }
+  .order-food {
+    width: 25%;
+    margin-right: 10px;
+  }
+  .food-kind {
+    width: 70%;
+  }
+  .btn {
+    margin-bottom: 3%;
+  }
+  .food {
+    width: 200px;
+  }
+
+  .shopcart-icon {
+    width: auto;
+  }
+}
+@media (max-width: 767px) and (min-width: 569px) {
+  .shopcart-icon {
+    float: left;
+  }
+}
+@media (max-width: 568px) {
+  .order-food {
+    width: 100%;
+    margin-right: -10px;
+  }
+  .food-kind {
+    width: 100%;
+  }
+  .select-input {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  .food {
+    clear: both;
+    width: 300px;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .food {
+    width: 100%;
+  }
+  .select-shop input[type="text"] {
+    width: 60%;
+  }
+  .shopcart-icon {
+    width: 40%;
+  }
+}
